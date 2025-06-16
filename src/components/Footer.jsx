@@ -1,81 +1,62 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-background text-dark border-t border-gray-200 pt-12 pb-6">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="relative bg-gradient-to-b from-sky-200 via-sky-100 to-background pt-20 pb-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-4 sm:grid-cols-2 gap-10 px-6 text-dark">
 
-        {/* Logo + Message */}
+        {/* Brand & Tagline */}
         <div>
-          <img src="/assets/logo/footer-logo.png" alt="Solar Insight Logo" className="h-10 mb-4" />
-          <p className="text-sm text-text">
-            Bringing sunlight to your doorstep. Trusted solar experts in the UK.
+          <h2 className="text-2xl font-bold text-primary mb-3">Solar Insight</h2>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Your trusted local solar experts delivering quality, efficiency, and savings across the UK.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-sm">
-            <li><a href="/" className="hover:text-primary">Home</a></li>
-            <li><a href="/services/residential-solar" className="hover:text-primary">Residential Solar</a></li>
-            <li><a href="/services/commercial-solar" className="hover:text-primary">Commercial Solar</a></li>
-            <li><a href="/services/solar-battery-storage" className="hover:text-primary">Solar Battery</a></li>
-            <li><a href="/services/ev-charging-installation" className="hover:text-primary">EV Charging</a></li>
-            <li><a href="/about" className="hover:text-primary">About</a></li>
-            <li><a href="/blogs" className="hover:text-primary">Blog</a></li>
-            <li><a href="/contact" className="hover:text-primary">Contact</a></li>
-            <li><a href="/free-quote" className="hover:text-primary font-medium">Get a Quote</a></li>
+          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li><Link to="/" className="hover:font-semibold">Home</Link></li>
+            <li><Link to="/about" className="hover:font-semibold">About</Link></li>
+            <li><Link to="/contact" className="hover:font-semibold">Contact</Link></li>
+            <li><Link to="/blogs" className="hover:font-semibold">Blog</Link></li>
+            <li><Link to="/free-quote" className="hover:font-semibold">Get a Quote</Link></li>
+          </ul>
+        </div>
+
+        {/* Services */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3">Our Services</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li><Link to="/services/residential-solar" className="hover:font-semibold">Residential Solar</Link></li>
+            <li><Link to="/services/commercial-solar" className="hover:font-semibold">Commercial Solar</Link></li>
+            <li><Link to="/services/solar-battery-storage" className="hover:font-semibold">Battery Storage</Link></li>
+            <li><Link to="/services/ev-charging-installation" className="hover:font-semibold">EV Charging</Link></li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
-          <p className="text-sm text-text mb-2">📍 Aldershot, Hampshire, UK</p>
-          <p className="text-sm text-text mb-2">📞 +44 123 456 7890</p>
-          <p className="text-sm text-text">✉️ info@solarinsight.co.uk</p>
-        </div>
-
-        {/* Newsletter + Socials */}
-        <div>
-          <h4 className="font-semibold text-lg mb-4">Stay Updated</h4>
-          <form className="mb-4">
-            <input
-              type="email"
-              placeholder="Your email"
-              className="w-full px-4 py-2 text-sm border border-gray-300 rounded-md mb-2"
-            />
-            <button
-              type="submit"
-              className="w-full bg-primary text-white py-2 rounded-md hover:bg-dark transition"
-            >
-              Subscribe
-            </button>
-          </form>
-          <div className="flex space-x-4 mt-2 text-xl">
-            <a href="#" aria-label="Facebook" className="hover:text-primary">📘</a>
-            <a href="#" aria-label="Instagram" className="hover:text-primary">📸</a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-primary">🔗</a>
-          </div>
+          <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li>
+              📍 24 Bell Lane, Camberley, Hampshire, GU17 0NW
+            </li>
+            <li>
+              📞 <a href="tel:07469993831" className="hover:underline">07469 993831</a>
+            </li>
+            <li>
+              ✉️ <a href="mailto:admin@solarinsight.co.uk" className="hover:underline">admin@solarinsight.co.uk</a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="mt-10 border-t border-gray-200 pt-4 text-center text-sm text-text">
-        <p>© {new Date().getFullYear()} Solar Insight. All rights reserved.</p>
-        <div className="flex justify-center space-x-4 mt-2">
-          <a href="/privacy-policy" className="hover:text-primary">Privacy Policy</a>
-          <a href="/terms-of-service" className="hover:text-primary">Terms of Service</a>
-          <a
-            href="https://matdigitals.com"
-            className="hover:text-primary"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Site by MatDigitals
-          </a>
-        </div>
+      {/* Bottom Notice */}
+      <div className="mt-10 pt-6 border-t border-gray-300 text-center text-sm text-gray-500 px-6">
+        &copy; {new Date().getFullYear()} Solar Insight. All rights reserved.
       </div>
     </footer>
   );

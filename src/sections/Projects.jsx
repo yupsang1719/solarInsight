@@ -3,39 +3,23 @@ import React, { useState } from 'react';
 const projects = [
   {
     id: 1,
-    image: '/assets/projects/solar-home-1.jpg',
-    location: 'Basingstoke, Hampshire',
-    summary: '6.2 kW system with battery — expected to save £900/year.',
+    image: '/assets/projects/reading.jpeg',
+    location: 'Reading, Berkshire',
   },
   {
     id: 2,
-    image: '/assets/projects/solar-home-2.jpg',
-    location: 'Guildford, Surrey',
-    summary: '4.5 kW system installed on a slate roof in under 2 days.',
+    image: '/assets/projects/odiham.jpeg',
+    location: 'Odiham, Hampshire',
   },
   {
     id: 3,
     image: '/assets/projects/solar-home-3.jpg',
-    location: 'Reading, Berkshire',
-    summary: 'High-efficiency panels on a flat roof with MCS certification.',
+    location: 'Camberley, Hampshire',
   },
   {
     id: 4,
-    image: '/assets/projects/solar-home-4.jpg',
-    location: 'Aldershot, Hampshire',
-    summary: '3.9 kW install with smart meter integration and app control.',
-  },
-  {
-    id: 5,
-    image: '/assets/projects/solar-home-5.jpg',
-    location: 'Southampton, Hampshire',
-    summary: '7.2 kW hybrid system powering both home and EV charger.',
-  },
-  {
-    id: 6,
-    image: '/assets/projects/solar-home-6.jpg',
-    location: 'Slough, Berkshire',
-    summary: 'Compact install on terraced house with 25-year warranty.',
+    image: '/assets/projects/solar-home-1.jpg',
+    location: 'Yateley, Hampshire',
   },
 ];
 
