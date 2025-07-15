@@ -56,7 +56,7 @@ const OfferPopup = () => {
 
             {/* Contact Info */}
             <div className="mt-6 mb-4 text-center text-sm md:text-base">
-              <p>📞 <strong>Call:</strong> <a href="tel:07469993831" className="text-primary underline">07469 993831</a></p>
+              <p>📞 <strong>Call:</strong> <a href="tel:07469993831" className="text-primary underline">0800 086 2556</a></p>
               <p>📧 <strong>Email:</strong> <a href="mailto:admin@solarinsight.co.uk" className="text-primary underline">admin@solarinsight.co.uk</a></p>
             </div>
 

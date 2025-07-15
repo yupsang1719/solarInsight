@@ -42,10 +42,10 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>
-              📍 24 Bell Lane, Camberley, Hampshire, GU17 0NW
+              📍 ASentinel House, Ancells Business Park, Harvest Crescent, Fleet, GU51 2UZ
             </li>
             <li>
-              📞 <a href="tel:07469993831" className="hover:underline">07469 993831</a>
+              📞 <a href="tel:07469993831" className="hover:underline">0800 086 2556</a>
             </li>
             <li>
               ✉️ <a href="mailto:admin@solarinsight.co.uk" className="hover:underline">admin@solarinsight.co.uk</a>

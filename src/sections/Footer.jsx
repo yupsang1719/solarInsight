@@ -32,8 +32,8 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
-          <p className="text-sm text-text mb-2">📍 Aldershot, Hampshire, UK</p>
-          <p className="text-sm text-text mb-2">📞 +44 123 456 7890</p>
+          <p className="text-sm text-text mb-2">📍 ASentinel House, Ancells Business Park, Harvest Crescent, Fleet, GU51 2UZ</p>
+          <p className="text-sm text-text mb-2">📞 0800 086 2556</p>
           <p className="text-sm text-text">✉️ info@solarinsight.co.uk</p>
         </div>
 
