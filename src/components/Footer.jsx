@@ -42,7 +42,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>
-              📍 ASentinel House, Ancells Business Park, Harvest Crescent, Fleet, GU51 2UZ
+              📍 Sentinel House, Ancells Business Park, Harvest Crescent, Fleet, GU51 2UZ
             </li>
             <li>
               📞 <a href="tel:07469993831" className="hover:underline">0800 086 2556</a>
